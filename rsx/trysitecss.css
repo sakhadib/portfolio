@@ -1,0 +1,147 @@
+*{
+    background-color: #1f1f1f;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 30px 10%;
+    
+}
+
+li, a, button, .butt{
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    color: #edf0f1;
+    text-decoration: none;
+}
+
+.nav_links{
+    list-style: none;
+}
+
+.nav_links li{
+    display: inline-block;
+    padding: 0 20px;
+}
+
+.nav_links li a{
+    transition: all 0.3s ease 0s; 
+}
+.nav_links li a:hover{
+    padding: 8px;
+    margin: 4px;
+    background-color: white;
+    border-radius: 5px;
+    color: #002630
+}
+
+.butt{
+    background-color: #007694;
+    padding: 15px;
+    border-radius: 5px;
+    transition: all 0.2s ease 0s; 
+}
+
+.butt:hover{
+    background-color: #0088a9;
+    padding: 20px;
+    /* border: 20px; */
+    margin: 4px;
+    transition: all 0.5s ease 0s; 
+}
+
+.top_movie{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 100px 11%;
+    /* background-color: #002630; */
+}
+
+.tag-title{
+    background-color: #0f0f0f;
+    color: white;
+    font-family: "Montserrat", sans-serif;
+    font-weight: bold;
+    padding: 10px;
+    border-radius: 10px;
+    align-items: center;
+    writing-mode: vertical-lr;
+    text-orientation: upright;
+    transition: all 0.5s ease 0s;
+}
+
+.tag-title:hover{
+    cursor: crosshair;
+    background-color: white;
+    color: black;
+    font-weight: 1200px;
+    padding: 12px;
+    transition: all 0.5s ease 0s;
+}
+
+.top-movie-container{
+    /* display: flex; */
+    justify-content: space-between;
+    align-items: center;
+    margin: 30px 10%;
+    /* overflow-x: auto; */
+}
+
+.movie-posters{
+    display: flex;
+}
+
+.movie-posters li{
+    list-style: none;
+    margin: 20px;
+    padding: 10px;
+    background-color: white;
+    border-radius: 20px;
+    align-self: center;
+    transition: all 0.2s ease 0s;
+}
+
+.movie-posters li:hover{
+    cursor: crosshair;
+    transform: scale(1.1);
+    transition: all 0.5s ease 0s;
+}
+
+.tkt-butt{
+    display: flex;
+    /* padding: 15px; */
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 10px;
+    background-color: white;
+    
+}
+
+.tkt-butt a{
+    margin: 5px;
+    padding: 15px;
+    border-radius: 5px;
+    background-color:#007694;
+    transition: all 0.2s ease 0s;
+}
+
+.tkt-butt a:hover{
+    background-color: #002630;
+    transition: all 0.5s ease 0s;
+}
+
+.movie-posters li img{
+    border-radius: 18px;
+}
+
+.movie-posters li img:hover{
+    border-radius: 18px;
+}
+

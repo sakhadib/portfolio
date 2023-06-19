@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600&display=swap');
+.fst{
+    background-image: url(../rsx/fst.jpg);
+    background-repeat: no-repeat;
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.header{
+    padding-top: 10px;
+    transition: background-color 0.3s ease-in-out, backdrop-filter 0.3s ease-in-out;
+    position: fixed;
+}
+
+.header.scrolled {
+    background-color: rgba(0, 0, 0, .1);
+    backdrop-filter: blur(5px);
+}
+
+.sh-logo-img{
+    font-size: 30px;
+    font-family: 'Rubik', sans-serif;
+}
+
+.sh-nav{
+    list-style: none;
+    padding-top: 8px;
+}
+
+.sh-nav li ul{
+    display: inline-block;
+}
+
+.sh-links{
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    padding: 8px;
+    transition: all 0.5s ease 0s;
+}
+
+.sh-links:hover{
+    padding: 8px;
+    background-color: rgba(132, 25, 25, .5);
+    border-radius: 5px;
+    color:white;
+    margin-left: 4px;
+    transition: all 0.5s ease 0s;
+}
+
+.sh-links-git{
+    margin-top: 8px;
+}
+
+.sh-links-git-1{
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    background-color: rgb(115, 32, 69);
+    padding: 20px;
+    padding-top:5px;
+    padding-bottom:7px;
+    border-radius:5px;
+    transition: all 0.5s ease 0s;
+}
+
+.sh-links-git-1:hover{
+    margin-left: 9px;
+    color:white;
+    transition: all 0.5s ease 0s;
+}
+
+:root {
+    --primary-color: white; 
+    --seccondary-color: #d9d9d9;
+}
+
+.fullscreen{
+    height: 120vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    vertical-align: middle;
+    margin: auto;
+    background-position: fixed;
+}
+
+.ho1{
+    color: var(--primary-color);
+    font-family: 'Rubik', sans-serif;
+    font-size: clamp(50px, 5vw, 70px);
+    margin: 20px;
+    /* margin-top: -70px; */
+    font-weight: 600;
+}
+
+.ho1 p{
+    margin : 0;
+}
+
+.ho2{
+    color: var(--seccondary-color);
+    font-family: 'Rubik', sans-serif;
+    font-size: clamp(20px, 5vw, 30px);
+    margin: 0;
+}
+.ho2 p{
+    margin : 0;
+}
+  
+
+.home-sp{
+    color: rgb(255, 255, 255);
+    font-family: 'Rubik', sans-serif;
+    font-size: clamp(20px, 5vw, 30px);
+}
+
+#word-flip {
+    opacity: 60;
+    transition: opacity 0.3s ease-in-out;
+    font-family: 'Rubik', sans-serif;
+}
+  
+.icons{
+    display: flex;
+    margin-top: 60px;
+    background-color: rgba(20, 20, 20, 0.3);
+    border-radius: 6px;
+    box-shadow: 5px 10px 10px rgba(0, 0, 0, 0.4);
+    padding: 10px;
+    transition: all 0.7s ease 0s;
+}
+.icons:hover{
+    scale: 1.3;
+}
+
+.icons i{
+    color: white;
+    font-size: 40px;
+    margin: 20px;
+    transition: all 0.7s ease 0s;
+}
+
+.icons i:hover{
+    font-size: 50px;
+    margin: 5px;
+    transition: all 0.5s ease 0s;
+}
+  
