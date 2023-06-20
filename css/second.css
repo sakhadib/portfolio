@@ -1,0 +1,130 @@
+
+.scnd{
+    background-color:rgba(18, 18, 18);
+    min-height: 100vh;
+}
+
+.sh-info{
+    min-height: 100vh;
+    background-color:rgb(49, 49, 49);
+    height: inherit;
+    padding-bottom: 150px;
+}
+
+.sh-img img{
+    width: 360px;
+    /* width: 90%; */
+    /* margin: 27px; */
+    margin-top: 100px;
+    border-radius: 5px;
+    transition: all 0.5s ease 0s;
+}
+
+.sh-img img:hover{
+    box-shadow: 0 0 100px rgba(255, 255, 255, .4);
+    transition: all 0.5s ease 0s;
+    cursor: pointer;
+}
+
+.sh-basic-info{
+    text-align: center;
+    margin-top: 50px;
+    color:white;
+}
+
+.sh-add-stuff{
+    margin-top: 40px;
+    color:white;
+    display: grid;
+    grid-template-columns: max-content 1fr;
+    align-items: center;
+
+}
+
+.sh-add-stuff p{
+    color:rgb(190, 190, 190);
+    margin:0px;
+    margin-top: 9px;
+    display: flex;
+    align-items: center;
+    font-family: "rubik", sans-serif;
+    font-size: 18px;
+}
+
+.sh-add-stuff p span {
+    margin-right: 5px;
+}
+
+.spacer-40{
+    height: 40px;
+}
+
+.spacer-25{
+    height: 25px;
+}
+
+.xx{
+    border: 2px solid white;
+}
+
+::-webkit-scrollbar{
+    width: 6px;
+}
+
+::-webkit-scrollbar-thumb{
+    background: rgb(184, 56, 58);
+    border-radius: 20px;
+}
+::-webkit-scrollbar-track-piece{
+    background-color: transparent;
+}
+
+.sh-add-stufff{
+    margin-left: 15px;
+}
+
+@media (max-width: 767px) {
+    .sh-add-stufff {
+        margin-left: 2px;
+    }
+}
+
+.sh-ssc tr td{
+    color: rgb(204, 204, 204);
+    font-family: "rubik", sans-serif;
+    font-weight: 300;
+    font-size: 17px;
+}
+
+.sh-cv-btn a{
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    background-color: white;
+    padding: 20px;
+    padding-top:10px;
+    padding-bottom:10px;
+    border-radius: 5px;
+    font-family:"rubik", sans-serif;
+    font-weight: bold;
+    transition: all 0.5s ease 0s;
+}
+
+.sh-cv-btn:hover{
+    margin-top: -12px;
+    transition: all 0.5s ease 0s;
+}
+
+
+.sh-about-txt p{
+    color:rgb(173, 173, 173);
+    font-family: 'rubik', sans-serif;
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 35px;
+    text-align: justify;
+}
+
+.sh-h2 h2{
+    color:rgb(184, 56, 58);
+    font-family: 'rubik', sans-serif;
+}
