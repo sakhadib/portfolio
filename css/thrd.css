@@ -1,7 +1,116 @@
 .third{
-    height: 100vh;
+    min-height: 100vh;
     background-image: url(../rsx/prj.jpg);
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
+}
+
+.sh-proj-title{
+    margin-bottom: 30px;
+    font-family: "rubik",sans-serif;
+    color:white;
+}
+.sh-t-t{
+    padding: 20px;
+    padding-top: 8px;
+    padding-bottom: 10px;
+    background-color: rgba(0, 0, 0, 0.4);
+    font-size: 25px;
+    border-radius: 5px;
+}
+
+/* Single Block Design */
+.sh-proj-block{
+    background-color: rgba(255,255,255,0.7);
+    padding: 20px;
+    padding-top: 15px;
+    border-radius: 25px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    transition: all 0.3s ease 0s;
+}
+
+@media (max-width: 767px) {
+    .sh-proj-block{
+        background-color: rgba(255,255,255,0.8);
+    }
+}
+
+.sh-proj-block:hover{
+    background-color: white;
+    cursor: pointer;
+    border-radius: 5px;
+    scale: 1.02;
+    transition: all 0.3s ease 0s;
+}
+
+.sh-proj-ttl p{
+    font-family:"Rubik",sans-serif;
+    font-size: 28px;
+    font-weight: 600;
+    border-bottom: 2px solid rgb(186, 186, 186);
+    border-bottom-right-radius: 30px;
+}
+
+.sh-proj-dsc{
+    width: 100%;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+.sh-proj-dsc p{
+    font-family: "Rubik", sans-serif;
+    line-height: 26px;
+    font-size: 18px;
+    text-align: justify;
+    width: 95%;
+}
+
+.sh-proj-dem{
+    display: flex;
+    justify-content: center;
+}
+
+.sh-proj-dem a{
+    margin: 20px;
+    margin-top: 4px;
+    margin-bottom: 3px;
+    padding: 20px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    background-color: rgb(184, 56, 58);
+    color: white;
+    border-radius: 5px;
+    text-decoration: none;
+    font-family: 'Rubik', sans-serif;
+    font-size: 18px;
+    transition: all 0.3s ease 0s;
+}
+
+.sh-proj-dem a:hover{
+    /* background-color: rgb(255, 255, 255);
+    color: rgb(184, 56, 58); */
+    transition: all 0.3s ease 0s;
+    font-weight: bold;
+    transform: translate(0, -10px);
+}
+
+.sh-proj-lang{
+    display: flex;
+}
+
+.sh-proj-lang p{
+    margin: 10px;
+    margin-top:0px;
+    color: white;
+    background-color: rgb(205, 65, 40);
+    padding: 10px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    border-radius: 5px;
+    font-family: 'Rubik', sans-serif;
+    font-size: 14px;
 }

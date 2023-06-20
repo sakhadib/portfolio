@@ -127,6 +127,7 @@
 .sh-h2 h2{
     color:rgb(184, 56, 58);
     font-family: 'rubik', sans-serif;
+    border-bottom: 2px solid rgb(38, 38, 38);
 }
 
 .sh-skill-tit{
