@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Counter</title>
+    <link rel="stylesheet" href="counter.css">
+    <script defer src="counter.js"></script>
+</head>
+<body>
+    <div class="buttons">
+        <a href="https://portfolio.sakhawatadib.com" style="color: black; background-color: white;">Go Back to portfolio</a>
+    </div>
+    <div class="wrap">
+        <div class="input-field">
+            <form action="" class="input-form">
+               <div class="el"><input type="text" name="Hour" id="hr" placeholder="0">HR</div> 
+               <div class="el"><input type="text" name="Min" id="min" placeholder="0">MIN</div> 
+               <div class="el"><input type="text" name="sec" id="sec" placeholder="0">SEC</div>  
+            </form>
+        </div>
+        <div class="ctr">
+            <p id="timeface">00 : 00 : 00</p>
+        </div>
+        <div class="btn">
+            <a href="#" id="startBtn" onclick="start()">START</a>
+            <a href="#" onclick="stop()">RESET</a>
+        </div>
+    </div>
+</body>
+</html>
