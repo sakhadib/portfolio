@@ -4,7 +4,7 @@ body{
     align-items: center;
     justify-content: center;
     height: 100vh;
-    background-color: #004e66;
+    background-color: #43a047;
 }
 
 .wrap{
@@ -12,7 +12,7 @@ body{
     /* border: 2px solid black; */
     border-radius: 10px;
     background-color: white;
-    box-shadow: 0 0 20px black;
+    box-shadow: 10px 10px 30px rgb(59, 59, 59);
 }
 
 .main-cont{
