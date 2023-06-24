@@ -1,0 +1,107 @@
+@font-face {
+    font-family: "Digital-7";
+    src: url("../../fonts/digital-7/digital-7.ttf");
+  }
+
+body{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-color: blueviolet;
+    justify-content: center;
+    align-items: center;
+}
+
+.wrap{
+    min-height: 60vh;
+    background-color: white;
+    min-width: 70vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 30px;
+    border-radius: 20px;
+}
+
+.disp-time{
+    background-color: rgb(226, 255, 245);
+    width: 80%;
+    text-align: center;
+    font-size: 160px;
+    font-family: "Digital-7", Arial, sans-serif;
+    padding-top: 120px;
+    padding-bottom: 120px;
+    border: 9px solid blueviolet;
+    border-radius: 20px ;
+}
+
+#sess{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 50px;
+    margin-left: 30px;
+}
+
+.butts{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.butts a{
+    margin-left: 20px;
+    margin-right: 20px;
+    padding: 10px;
+    background-color: rgb(59, 59, 59);
+    width: 150px;
+    text-align: center;
+    text-decoration: none;
+    color: rgb(244, 255, 142);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 20px;
+    letter-spacing: 4px;
+    border-radius: 5px;
+}
+
+.butts-2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 50px;
+
+}
+
+.butts-2 a{
+    margin-left: 20px;
+    margin-right: 20px;
+    padding: 10px;
+    background-color: rgb(255, 255, 255);
+    /* width: 150px; */
+    text-align: center;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 20px;
+    letter-spacing: 4px;
+    border-radius: 5px;
+}
+
+
+::-webkit-scrollbar{
+    width: 0px;
+}
+
+@media only screen and (max-width: 767px){
+    .disp-time{
+        font-size: 60px;
+        font-family: "Digital-7", Arial, sans-serif;
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+    #sess{
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-size: 25px;
+        margin-left: 10px;
+    }
+}
