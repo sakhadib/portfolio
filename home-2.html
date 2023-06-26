@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adib Sakhawat</title>
+    <!-- Bootstrap Document -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <!-- Webfonts and icons -->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+    <!-- Custom CSS for site -->
+    <link rel="stylesheet" href="css/home.css">
+    <!-- Custom JS for site -->
+    <script defer src="js/flip.js"></script>
+    <script defer src="js/tab.js"></script>
+</head>
+<body>
+    <div class="fst" id="home">
+        <div class="sh-header-wrap">
+            <div class="header container-fluid">
+                <div class="row">
+                    <div class="col-lg-2 offset-lg-1 col-md-auto align-items-sm-center align-items-xs-center text-sm-center">
+                        <p class="sh-logo-img"><i class="uil uil-code-branch sh-logo-txt"></i> Shuvro</p>
+                    </div>
+                    <div class="col-7 sh-nav align-items-sm-center d-none d-lg-flex justify-content-end ml-auto">
+                        <li>
+                            <ul><a href="#home" class="sh-links"><i class="uil uil-estate"></i> Home</a></ul>
+                            <ul><a href="#about" class="sh-links"><i class="uil uil-user"></i> About</a></ul>
+                            <ul><a href="#projects" class="sh-links"><i class="uil uil-mountains-sun"></i> Projects</a></ul>
+                            <ul><a href="https://code.sakhawatadib.com" class="sh-links"><i class="uil uil-laptop-connection"></i> Experience</a></ul>
+                            <ul><a href="https://blog.sakhawatadib.com" class="sh-links"><i class="uil uil-edit-alt"></i> Blog</a></ul>
+                            <ul><a href="https://sakhawatadib.com/wp-content/uploads/2023/03/CV-Adib-Sakhawat.pdf" class="sh-links"><i class="uil uil-file-info-alt"></i> CV</a></ul>
+                        </li>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <section class="fullscreen container move-not" id="home">
+            <div class="spacer d-md-block d-sm-block"></div>
+            <div class="ho2 ">
+                <p>Hay there, it's me</p>
+            </div>
+            <div class="ho1">
+                <p>ADIB SAKHAWAT</p>
+            </div>
+            <div class="ho2">
+                <p class="home-sp">I am a <span id="word-flip"></span></p>
+            </div>
+            <div class="icons">
+                <a href="https://github.com/sakhadib"><i class="uil uil-github"></i></a>
+                <a href="https://www.linkedin.com/in/adib-sakhawat-41991a267/"><i class="uil uil-linkedin"></i></a>
+                <a href="https://facebook.com/adib.sakhawat"><i class="uil uil-facebook"></i></a>
+                <a href="https://www.youtube.com/@sakhadib"><i class="uil uil-youtube"></i></a>
+                <a href="https://t.me/Adib_sakhawat"><i class="uil uil-telegram-alt"></i></a>
+            </div>   
+        </section>
+    </div>
+    <div class="scnd" id="about">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 sh-info d-flex flex-column align-items-center">
+                    <div class="sh-img">
+                        <img src="rsx/shuvro.jpg" alt="">
+                    </div>
+                    <div class="sh-basic-info">
+                        <h3>Adib Sakhawat</h3>
+                        <h5>Software Engineering Student</h4>
+                    </div>
+                    <div class="sh-add-stuff">
+                        <p>Date of Birth &nbsp;</p>
+                        <p>: 11 Dec, 2003</p>
+                        <p>Address </p>
+                        <p> : IUT, Gazipur, Bangladesh</p>
+                        <p>Zip code </p>
+                        <p>: 1704</p>
+                        <p>Email </p>
+                        <p>: adibsakhawat@iut-dhaka.edu</p>
+                        <p>Phone </p>
+                        <p>: +8801645534121</p>
+                    </div>
+
+                    <div class="spacer-40"></div>
+                    <div class="spacer-40"></div>
+                    <div class="sh-cv-btn" id="cv">
+                        <a id="cv" href="https://sakhawatadib.com/wp-content/uploads/2023/03/CV-Adib-Sakhawat.pdf"> Download CV</a>
+                    </div>
+                </div>
+
+                <div class="col-lg-7 offset-lg-1 sh-right">
+                    <div class="spacer-40"></div>
+                    <div class="spacer-40"></div>
+                    <div class="sh-about-txt">
+                        <p>
+                            I'm a Software Engineering student at the Islamic University of Technology, specializing in frontend and backend development. I'm passionate about the intersection of technology and science, and enjoy exploring this connection through literature. I also have a strong interest in digital art and utilize visual content to communicate ideas effectively.
+                        </p>
+                    </div>
+                    <div class="spacer-40"></div>
+
+                    <div class="tab-titles">
+                        <div class="tab-links active-link" onclick="opentab('Skills')">Skills</div>
+                        <div class="tab-links" onclick="opentab('Experience')">Experience</div>
+                        <div class="tab-links " onclick="opentab('Education')">Education</div>
+                    </div>
+                    
+                    <div class="sh-add-stufff tab-contents" id="Education">
+                        <div class="sh-edu-block">
+                            <div class="sh-year"><i class="uil uil-calender"></i> 2021 - Now</div>
+                            <div class="sh-degree"><i class="uil uil-shield"></i> BSc. in Software Engineering</div>
+                            <div class="sh-inst"><i class="uil uil-user-location"></i> Dept. of Computer Science and Engineering</div>
+                            <div class="sh-inst"><i class="uil uil-graduation-cap"></i> Islamic University of Technology, Bangladesh</div>
+                            <div class="result-links">
+                                <div class="result-link"><a href="#">ID card</a></div>
+                            </div>
+                        </div>
+                        <div class="sh-edu-block">
+                            <div class="sh-year"><i class="uil uil-calender"></i> 2019 - 2021</div>
+                            <div class="sh-degree"><i class="uil uil-shield"></i> Higher-Secondary School Certicicate (HSC)</div>
+                            <div class="sh-inst"><i class="uil uil-graduation-cap"></i> New Govt. Degree College, Rajshahi</div>
+                            <div class="result-links">
+                                <div class="result-link"><a href="#">MarkSheet</a></div>
+                                <div class="result-link"><a href="#">Certificate</a></div>
+                            </div>
+                        </div>
+                        <div class="sh-edu-block">
+                            <div class="sh-year"><i class="uil uil-calender"></i> 2013 - 2019</div>
+                            <div class="sh-degree"><i class="uil uil-shield"></i> Secondary School Certicicate (SSC)</div>
+                            <div class="sh-inst"><i class="uil uil-graduation-cap"></i> Govt. Laboratory High School, Rajshahi</div>
+                            <div class="result-links"></div>
+                            <div class="result-link"><a href="#">MarkSheet</a></div>
+                            <div class="result-link"><a href="#">Certificate</a></div>
+                        </div>
+                    </div>
+                    <div class="sh-add-stufff tab-contents active-tab" id="Skills">
+                        <div class="skill-block">
+                            <div class="skill-title"><i class="uil uil-microphone"></i> Human Language</div>
+                            <div class="skills">
+                                <li>
+                                    <ul class="baad">Bangla <span class="desc">(Native)</span></ul>
+                                    <ul class="baad">English <span class="desc">(Fluent)</span></ul>
+                                    <ul class="baad">Hindi <span class="desc">(Verbal)</span></ul>
+                                    <ul class="baad">Urdu <span class="desc">(Verbal)</span></ul>
+                                    <ul class="baad">Arabic <span class="desc">(Non_verbal)</span></ul>
+                                </li>
+                            </div>
+                        </div>
+                        <div class="skill-block">
+                            <div class="skill-title"><i class="uil uil-desktop"></i> Frontend Development</div>
+                            <div class="skills">
+                                <li>
+                                    <ul class="sh-item">C#</ul>
+                                    <ul class="sh-item">HTML</ul>
+                                    <ul class="sh-item">CSS</ul>
+                                    <ul class="sh-item">JavaScript</ul>
+                                    <ul class="sh-item">Python</ul>
+                                    <ul class="sh-item">Word Press</ul>
+                                </li>
+                            </div>
+                        </div>
+                        <div class="skill-block">
+                            <div class="skill-title"><i class="uil uil-server"></i> Backend Development</div>
+                            <div class="skills">
+                                <li>
+                                    <ul class="sh-item">C</ul>
+                                    <ul class="sh-item">C++</ul>
+                                    <ul class="sh-item">C#</ul>
+                                    <ul class="sh-item">Python</ul>
+                                    <ul class="sh-item">Java</ul>
+                                    <ul class="sh-item">php</ul>
+                                    <ul class="sh-item">SQL</ul>
+                                </li>
+                            </div>
+                        </div>
+                        <div class="skill-block">
+                            <div class="skill-title"><i class="uil uil-layer-group"></i> Frameworks</div>
+                            <div class="skills">
+                                <li>
+                                    <ul class="sh-item">.Net Framework</ul>
+                                    <ul class="sh-item">ASP .Net Framework</ul>
+                                    <ul class="sh-item">Bootstrap</ul>
+                                </li>
+                            </div>
+                        </div>
+                        <div class="skill-block">
+                            <div class="skill-title"><i class="uil uil-edit-alt"></i> Design</div>
+                            <div class="skills">
+                                <li>
+                                    <ul class="sh-item">Photoshop</ul>
+                                    <ul class="sh-item">Illustrator</ul>
+                                    <ul class="sh-item">Premiere pro</ul>
+                                    <ul class="sh-item">Indesign</ul>
+                                    <ul class="sh-item">After Effects</ul>
+                                </li>
+                            </div>
+                        </div>
+                        <div class="skill-block">
+                            <div class="skill-title"><i class="uil uil-file-info-alt"></i> Document</div>
+                            <div class="skills">
+                                <li>
+                                    <ul class="sh-item">MS Office</ul>
+                                    <ul class="sh-item">Google Office suite</ul>
+                                    <ul class="sh-item">Any text / spreadsheet / slide editor</ul>
+                                </li>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="sh-add-stufff tab-contents active-tab" id="Experience"></div>
+                        <div class="exp-block">
+
+                        </div>
+                    </div>
+                </div>
+                
+                
+            </div>
+        </div>
+    </div>
+</body>
+</html>

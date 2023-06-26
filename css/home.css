@@ -1,0 +1,441 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap');
+
+body{
+    color:white;
+}
+
+:root {
+    --primary-color: #f42a41;
+    --secondary-color: rgb(245, 222, 179);
+    --blue: #14dbc0;
+  }
+
+.fst{
+    background-image: url(../rsx/homeback.jpg);
+    background-repeat: no-repeat;
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    z-index:1;
+    
+}
+
+
+
+.header{
+    padding-top: 10px;
+    transition: background-color 0.3s ease-in-out, backdrop-filter 0.3s ease-in-out;
+    position: fixed;
+}
+
+@media (max-width: 767px) {
+    .header {
+      position: static;
+    }
+
+    .fst{
+        background-position:70%;
+    }
+    .icons{
+        margin-left: 0px;
+    }
+}
+
+.header.scrolled {
+    background-color: rgba(0, 0, 0, .1);
+    backdrop-filter: blur(5px);
+}
+
+.sh-logo-img{
+    font-size: 30px;
+    font-weight: bold;
+    font-family: 'Rubik', sans-serif;
+    color: rgb(245, 222, 179);
+}
+
+.sh-nav{
+    list-style: none;
+    /* padding-top: 8px; */
+}
+
+.sh-nav li ul{
+    display: inline-block;
+}
+
+.sh-links{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    padding: 8px;
+    transition: all 0.1s ease 0s;
+}
+
+.sh-links:hover{
+    padding: 8px;
+    border-radius: 5px;
+    font-weight: bold;
+    margin-left: 4px;
+    transition: all 0.1s ease 0s; 
+    color: var(--primary-color);
+}
+
+.fullscreen{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+    vertical-align: middle;
+    margin: auto;
+    background-position: fixed;
+}
+.ho1{
+    color: var(--primary-color);
+    font-family: 'Rubik', sans-serif;
+    font-size: clamp(50px, 5vw, 70px);
+    /* margin: 20px; */
+    /* margin-top: -70px; */
+    font-weight: 600;
+}
+
+.ho1 p{
+    margin : 0;
+}
+
+.ho2{
+    color: wheat;
+    font-family: 'Rubik', sans-serif;
+    font-size: clamp(20px, 5vw, 45px);
+    margin: 0;
+}
+.ho2 p{
+    margin : 0;
+}
+#word-flip {
+    opacity: 60;
+    transition: opacity 0.3s ease-in-out;
+    font-family: 'Rubik', sans-serif;
+}
+  
+.icons{
+    display: flex;
+    margin-top: 20px;
+    background-color: rgba(20, 20, 20, 0.3);
+    border-radius: 6px;
+    box-shadow: 5px 10px 10px rgba(0, 0, 0, 0.4);
+    padding: 10px;
+    transition: all 0.7s ease 0s;
+    width: max-content;
+    margin-left: -30px;
+}
+.icons:hover{
+    /* scale: 1.3; */
+}
+
+.icons i{
+    color: white;
+    font-size: 40px;
+    margin: 20px;
+    transition: all 0.7s ease 0s;
+}
+
+.icons a:hover{
+    color: yellow;
+    rotate: 360deg;
+    transition: all 1.2s ease 0s;
+}
+
+.spacer{
+    height: 180px;
+}
+
+
+
+
+/* ------------  About section ----------------- */
+
+
+.scnd{
+    background-color:rgba(18, 18, 18);
+    min-height: 100vh;
+    z-index: 999;
+}
+
+.sh-info{
+    min-height: 100vh;
+    background-color:rgb(49, 49, 49);
+    height: inherit;
+    padding-bottom: 150px;
+}
+
+.sh-img img{
+    width: 360px;
+    /* width: 90%; */
+    /* margin: 27px; */
+    margin-top: 100px;
+    border-radius: 5px;
+    transition: all 0.5s ease 0s;
+}
+
+.sh-img img:hover{
+    box-shadow: 0 0 100px rgba(255, 255, 255, .4);
+    transition: all 0.5s ease 0s;
+    cursor: pointer;
+}
+
+.sh-basic-info{
+    text-align: center;
+    margin-top: 50px;
+    color:white;
+}
+
+.sh-add-stuff{
+    margin-top: 40px;
+    color:white;
+    display: grid;
+    grid-template-columns: max-content 1fr;
+    align-items: center;
+
+}
+
+.sh-add-stuff p{
+    color:rgb(190, 190, 190);
+    margin:0px;
+    margin-top: 9px;
+    display: flex;
+    align-items: center;
+    font-family: "rubik", sans-serif;
+    font-size: 18px;
+}
+
+.sh-add-stuff p span {
+    margin-right: 5px;
+}
+
+.spacer-40{
+    height: 40px;
+}
+
+.spacer-25{
+    height: 25px;
+}
+
+.xx{
+    border: 2px solid white;
+}
+
+::-webkit-scrollbar{
+    width: 6px;
+}
+
+::-webkit-scrollbar-thumb{
+    background: var(--primary-color);
+    border-radius: 20px;
+}
+::-webkit-scrollbar-track-piece{
+    background-color: transparent;
+}
+
+.sh-add-stufff{
+    margin-left: 15px;
+}
+
+@media (max-width: 767px) {
+    .sh-add-stufff {
+        margin-left: 2px;
+    }
+}
+
+.sh-ssc tr td{
+    color: rgb(204, 204, 204);
+    font-family: "rubik", sans-serif;
+    font-weight: 300;
+    font-size: 17px;
+}
+
+.sh-cv-btn a{
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    background-color: white;
+    padding: 20px;
+    padding-top:10px;
+    padding-bottom:10px;
+    border-radius: 5px;
+    font-family:"rubik", sans-serif;
+    font-weight: bold;
+    transition: all 0.5s ease 0s;
+}
+
+.sh-cv-btn:hover{
+    margin-top: -12px;
+    transition: all 0.5s ease 0s;
+}
+
+
+.sh-about-txt p{
+    color:rgb(173, 173, 173);
+    font-family: 'rubik', sans-serif;
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 35px;
+    text-align: justify;
+}
+
+.sh-h2 h2{
+    color:var(--primary-color);
+    font-family: 'rubik', sans-serif;
+    border-bottom: 2px solid rgb(38, 38, 38);
+}
+
+.sh-skill-tit{
+    all:initial;
+    color: var(--primary-color);
+    font-family: 'rubik', sans-serif;
+}
+
+.tab-titles{
+    display: flex;
+    justify-content: left;
+    margin: 20px 0 40px;
+    width: max-content;
+}
+
+
+
+.tab-links{
+    margin-right: 50px;
+    color:var(--secondary-color);
+    font-size: max(26px, 40%);
+    cursor: pointer;
+    position: relative;
+    transition: all 0.3s ease 0s;
+}
+
+.tab-links:hover{
+    color: var(--primary-color);
+    transform: translate(0, -5px);
+    transition: all 0.3s ease 0s;
+}
+
+.tab-links::after{
+    content: '';
+    width: 0px;
+    height: 3px;
+    background-color: var(--primary-color);
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    transition: all 0.3s ease 0s;
+}
+
+.active-link::after{
+    width: 80%;
+}
+
+.tab-contents{
+    display: none;
+}
+
+.tab-contents.active-tab{
+    display: block;
+}
+
+@media (max-width: 767px) {
+    /* .tab-titles{
+        display: flex;
+        flex-direction: column;
+    } */
+
+    .tab-links{
+        font-size: 20px;
+    }
+}
+
+.sh-edu-block{
+    font-family: "Rubik", sans-serif;
+    font-size: 18px;
+}
+
+.result-links{
+    display: flex;
+}
+.result-link{
+    margin-right: 20px;
+    margin-top: 10px;
+}
+.result-link a{
+    text-decoration: none;
+    color: var(--secondary-color);
+    padding: 10px;
+    padding-left: 0px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-radius: 4px;
+    transition: all 0.1s ease 0s;
+    /* border: 2px solid wheat */
+}
+
+.result-link a:hover{
+    color: var(--primary-color);
+    transition: all 0.1s ease 0s;
+    text-decoration: underline;
+}
+
+.sh-year{
+    margin-top: 40px;
+    font-size: 23px; 
+    color: var(--blue);
+    border-bottom: 2px solid var(--blue);
+    width: max-content;
+}
+
+.sh-degree{
+    font-size: 20px;
+    margin-top: 16px;
+}
+
+.sh-inst{
+    font-size: 20px;
+    margin-top: 3px;
+}
+
+.skill-title{
+    margin-top: 20px;
+    font-size: 22px;
+    color: var(--blue);
+}
+
+.skills li{
+    list-style: none;
+    
+}
+
+.skills li ul{
+    display: inline-block;
+    font-size: 16px;
+    margin: 10px;
+    margin-right: 20px;
+}
+
+.baad{
+    background-color: transparent;
+}
+
+.desc{
+    color:rgb(128, 128, 128);
+    font-style: italic;
+    /* margin-left: 4px; */
+}
+
+.sh-item{
+    color: black;
+    background-color: wheat;
+    padding: 10px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    border-radius: 5px;
+    font-family: "rubik", sans-serif;
+    font-weight: 600;
+}
