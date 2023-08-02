@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quizup</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="wrap-2">
+            <div class="box">
+                <p class="res" id="cr">5</p>
+                <p class="lab">correct</p>
+            </div>
+            <div class="box">
+                <p class="res" id="wr">5</p>
+                <p class="lab">incorrect</p>
+            </div>
+            <div class="box">
+                <p class="res" id="tt">5</p>
+                <p class="lab">answered</p>
+            </div>
+        </div>
+        <div class="wrap">
+            <div class="state">
+                <p id="state"></p>
+            </div>
+            <div class="ops">
+                <li>
+                    <ul id="op1" onclick="auth('op1')">op1</ul>
+                    <ul id="op2" onclick="auth('op2')">op2</ul>
+                    <ul id="op3" onclick="auth('op3')">op3</ul>
+                    <ul id="op4" onclick="auth('op4')">op4</ul>
+                </li>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

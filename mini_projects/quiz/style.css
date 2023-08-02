@@ -1,0 +1,102 @@
+*{
+    font-family: "poppins", sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.ops li{
+    list-style: none;
+}
+
+.ops li ul{
+    /* display: inline-block; */
+}
+
+body{
+    min-height: 100vh;
+    min-width: 100vw;
+    background-image: url(../../rsx/abc2.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.wrap{
+    background-color: rgba(255,255,255,0.6);
+    padding: 40px;
+    border-radius: 10px;
+    /* min-width: 300px; */
+    margin: 20px;
+}
+
+.state p{
+    font-size: 30px;
+    margin-bottom: 40px;
+}
+
+.state p::before{
+    content: '> ';
+}
+
+.box{
+    border: 2px solid white;
+    padding: 7px;
+    border-radius: 5px;
+    min-width:80px;
+}
+
+.ops li ul{
+    margin: 12px;
+    margin-right: 18px;
+    font-size: 22px;
+    /* background-color: rgb(190, 190, 190); */
+    padding: 15px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    cursor: pointer;
+    border-radius: 5px;
+    text-align: center;
+    border: 2px solid black;
+    transition: all 0.3s ease 0s;
+}
+
+.ops li ul:hover{
+    background-color: azure;
+    transform: translate(0, -5px);
+    transition: all 0.3s ease 0s;
+}
+
+.wrap-2{
+    /* min-width: 400px; */
+    background-color: rgba(255,255,255,0.6);
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 40px;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 20px;
+}
+
+.res{
+    font-size: 40px;
+    font-weight: 600;
+    text-align: center;
+}
+
+.lab{
+    font-size: 14px;
+    text-align: center;
+}
+
+#cr{
+    color: green;
+}
+
+#wr{
+    color: rgb(196, 0, 0);
+}

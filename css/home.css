@@ -439,3 +439,38 @@ body{
     font-family: "rubik", sans-serif;
     font-weight: 600;
 }
+
+.exp-title{
+    font-size: 22px;
+    color:white;
+    font-family: "Rubik", sans-serif;
+    font-weight: 400;
+    margin-left: 20px;
+}
+
+.exp-yr{
+    font-size: 17px;
+    color: white;
+    font-family: "Rubik", sans-serif;
+    font-weight: 500;
+    padding: 10px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    background-color: var(--primary-color);
+    border-radius: 5px;
+    width: max-content;
+}
+
+.exp-clb{
+    font-size: 22px;
+    color: white;
+    font-family: "Rubik", sans-serif;
+    font-weight: 400;
+    margin-left: 20px;    
+}
+
+.exp-block{
+    margin-top: 10px;
+    margin-bottom: 15px;
+    
+}
