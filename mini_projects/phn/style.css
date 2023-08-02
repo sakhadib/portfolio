@@ -1,0 +1,24 @@
+.wrap{
+    min-height: 20vh;
+    min-width: 30vw;
+}
+
+body{
+    background-color: rgb(218, 218, 218);
+}
+
+.mycode{
+    background-color: rgb(255, 255, 255);
+    /* border: 1px solid rgb(0, 0, 0); */
+    border-radius: 5px;
+    padding: 45px;
+    margin: 10px;
+    min-height: 5vh;
+    min-width: 30vw;
+}
+
+#numbs{
+    color: rgb(35, 35, 35);
+    font-size: 20px;
+    font-family: "monospace", "space-mono", "courier", "arial", "sans-serif";
+}
