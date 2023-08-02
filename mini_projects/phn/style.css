@@ -14,7 +14,7 @@ body{
     padding: 45px;
     margin: 10px;
     min-height: 5vh;
-    min-width: 30vw;
+    /* min-width: 30vw; */
 }
 
 #numbs{
