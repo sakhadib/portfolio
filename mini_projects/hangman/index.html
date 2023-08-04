@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Hangman Game</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+  }
+  #word {
+    font-size: 24px;
+    margin-top: 20px;
+  }
+  #letters {
+    margin-top: 20px;
+  }
+  #message {
+    margin-top: 20px;
+    font-weight: bold;
+  }
+  #hangman {
+    display: inline-block;
+    margin-top: 20px;
+  }
+</style>
+</head>
+<body>
+<h1>Hangman Game</h1>
+<div id="word"></div>
+<div id="letters"></div>
+<div id="message"></div>
+<div id="hangman">
+    <code>
+        _______
+    |/      |
+    |      (_)
+    |      \|/
+    |       |
+    |      / \
+   _|_
+    </code>
+</div>
+
+<script>
+const words = ['hangman', 'javascript', 'programming', 'openai', 'developer'];
+let selectedWord = words[Math.floor(Math.random() * words.length)];
+let guessedLetters = [];
+let remainingGuesses = 9;
+
+function updateWordDisplay() {
+  let wordDisplay = '';
+  for (const letter of selectedWord) {
+    if (guessedLetters.includes(letter)) {
+      wordDisplay += letter;
+    } else {
+      wordDisplay += '_';
+    }
+  }
+  document.getElementById('word').textContent = wordDisplay;
+}
+
+function updateLettersDisplay() {
+  document.getElementById('letters').textContent = `Guessed Letters: ${guessedLetters.join(', ')}`;
+}
+
+function updateMessage(message) {
+  document.getElementById('message').textContent = message;
+}
+
+function drawHangman() {
+  const hangmanElement = document.getElementById('hangman');
+  hangmanElement.innerHTML = `
+    <pre>
+    _______
+   |/      |
+   |      ${remainingGuesses < 9 ? '(_)' : ''}
+   |      ${remainingGuesses < 7 ? '\\|' : ''}
+   |       ${remainingGuesses < 8 ? '|' : ''}
+   |      ${remainingGuesses < 6 ? '/ ' : ''}${remainingGuesses < 5 ? '\\' : ''}
+  _|_
+  </pre>
+  `;
+}
+
+function checkWin() {
+  if (selectedWord === document.getElementById('word').textContent) {
+    updateMessage('Congratulations! You won!');
+    document.getElementById('letters').textContent = '';
+    drawHangman();
+  } else if (remainingGuesses === 0) {
+    updateMessage(`Game over. The word was "${selectedWord}".`);
+    document.getElementById('letters').textContent = '';
+    drawHangman();
+  }
+}
+
+document.addEventListener('keydown', event => {
+  const letter = event.key.toLowerCase();
+  if (/^[a-z]$/.test(letter) && !guessedLetters.includes(letter)) {
+    guessedLetters.push(letter);
+    if (!selectedWord.includes(letter)) {
+      remainingGuesses--;
+      drawHangman();
+    }
+    updateWordDisplay();
+    updateLettersDisplay();
+    checkWin();
+  }
+});
+
+updateWordDisplay();
+updateLettersDisplay();
+drawHangman();
+</script>
+</body>
+</html>

@@ -6,13 +6,13 @@ body{
 }
 
 :root {
-    --primary-color: #f42a41;
+    --primary-color: #ffffff;
     --secondary-color: rgb(245, 222, 179);
     --blue: #14dbc0;
   }
 
 .fst{
-    background-image: url(../rsx/homeback.jpg);
+    background-image: url(../rsx/fst.jpg);
     background-repeat: no-repeat;
     height: 100vh;
     background-position: center;

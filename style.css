@@ -1,0 +1,11 @@
+.navbar {
+    background-color: transparent;
+}
+
+.navbar-brand {
+    color: #fff; /* Optional: Set the color of the brand text */
+}
+
+.navbar-nav .nav-link {
+    color: #fff; /* Optional: Set the color of the menu item texts */
+}
