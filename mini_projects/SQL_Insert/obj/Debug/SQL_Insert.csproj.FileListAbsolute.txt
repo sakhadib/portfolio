@@ -1,0 +1,8 @@
+D:\Repos\portfolio\mini_projects\SQL_Insert\bin\Debug\SQL_Insert.exe.config
+D:\Repos\portfolio\mini_projects\SQL_Insert\bin\Debug\SQL_Insert.exe
+D:\Repos\portfolio\mini_projects\SQL_Insert\bin\Debug\SQL_Insert.pdb
+D:\Repos\portfolio\mini_projects\SQL_Insert\obj\Debug\SQL_Insert.csproj.AssemblyReference.cache
+D:\Repos\portfolio\mini_projects\SQL_Insert\obj\Debug\SQL_Insert.csproj.SuggestedBindingRedirects.cache
+D:\Repos\portfolio\mini_projects\SQL_Insert\obj\Debug\SQL_Insert.csproj.CoreCompileInputs.cache
+D:\Repos\portfolio\mini_projects\SQL_Insert\obj\Debug\SQL_Insert.exe
+D:\Repos\portfolio\mini_projects\SQL_Insert\obj\Debug\SQL_Insert.pdb
